@@ -43,8 +43,8 @@ function main(e) {
 
   // if this was a row deletion then ID will be empty, thus no work to do here
   // also, if this was *any* other type of change but the data already existed, 
-  // then IGNORE and do not create duplicate content!
-  if (thisID != "" && thisOutputDocID == '') {
+  // then ignore and do not create duplicate content!
+  if (thisID != '' && thisOutputDocID == '') {
 
     var thisAssignmentID = theSheet.getRange(theActiveRow, columnMap["AssignmentID"]).getValue();
     var thisStudentEmail = theSheet.getRange(theActiveRow, columnMap["StudentEmail"]).getValue();
